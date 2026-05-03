@@ -257,15 +257,7 @@
     50% { transform: rotate(225deg) scale(1.3); }
     to { transform: rotate(405deg) scale(1); }
   }
-.contact-info {
-  margin-top: 0.6rem;
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 0.8rem;
-  color: #ffe680;
-  letter-spacing: 1px;
-  position: relative;
-  z-index: 1;
-}
+
   .couple-section {
     text-align: center;
     padding: 0.5rem 2rem;
@@ -369,7 +361,29 @@
     color: #666;
     line-height: 1.5;
   }
+.calendar-box {
+  width: 60px;
+  margin: 0 auto 5px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  font-family: 'Playfair Display', serif;
+}
 
+.cal-month {
+  background: #e53935;
+  color: white;
+  font-size: 12px;
+  padding: 2px;
+}
+
+.cal-day {
+  background: white;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px 0;
+}
   .bottom-banner {
     background: linear-gradient(90deg, #4a0080 0%, #7b2d8b 25%, #c2185b 50%, #7b2d8b 75%, #4a0080 100%);
     padding: 1rem 2rem;
@@ -525,7 +539,11 @@
 
     <div class="details-grid">
       <div class="detail-item">
-        <span class="detail-icon">📅</span>
+        <!-- <span class="detail-icon">📅</span> -->
+         <div class="calendar-box">
+  <div class="cal-month">May</div>
+  <div class="cal-day">8</div>
+</div>
         <div class="detail-label">Date</div>
         <div class="detail-value">8th May</div>
         <div class="detail-sub">2026</div>
@@ -550,15 +568,10 @@
       </div>
     </div>
 
-<div class="bottom-banner">
-  <div class="rsvp-text">🥂 Join Us in Celebration 🥂</div>
-  <div class="rsvp-sub">Your presence will make this evening unforgettable</div>
-
-  <div class="contact-info">
-    Contact: <strong>Shailendra Kumar</strong><br>
-    📞 9934647658
-  </div>
-</div>
+    <div class="bottom-banner">
+      <div class="rsvp-text">🥂 Join Us in Celebration 🥂</div>
+      <div class="rsvp-sub">Your presence will make this evening unforgettable</div>
+    </div>
 
   </div>
 </div>
